@@ -1,59 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Francine Figueiredo</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <meta name="p:domain_verify" content="da22b63b421c3a64952150aee4b643ee"/>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfólio | Francine Figueiredo | Dev Web</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="p:domain_verify" content="da22b63b421c3a64952150aee4b643ee" />
+  </head>
 
-<body>
-  <nav>
-      <a href="#sobre">SOBRE</a>
-      <a href="#habilidades">HABILIDADES</a>
+  <body>
+    <nav>
+      <a href="#sobre">SOBRE |</a>
+      <a href="#habilidades">HABILIDADES |</a>
+      <a href="#projetos">PROJETOS |</a>
       <a href="#contato">CONTATO</a>
-  </nav> 
+      <div class="container-icones-sociais">
+        <a href="https://www.linkedin.com/in/francinefigueiredo" target="_blank"
+          ><img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/material/24/linkedin--v1.png"
+            alt="linkedin--v1"
+        /></a>
+        <a href="https://github.com/frantEnd" target="_blank"
+          ><img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/material/24/github-2.png"
+            alt="github-2"
+        /></a>
+        <a href="https://www.instagram.com/franfigueiredoo/" target="_blank">
+          <img
+            width="24"
+            height="24"
+            src="https://img.icons8.com/material/24/instagram-new--v1.png"
+            alt="instagram-new--v1"
+        /></a>
+      </div>
+    </nav>
+    <h1>Olá, Seja Bem-Vind@!</h1>
+    <div class="sobre">
+      <img
+        class="foto-perfil"
+        src="./img/foto-francine.png"
+        alt="Foto de Francine Figueiredo"
+      />
+      <p id="sobre">
+        <strong>Sobre mim:</strong> <br />Francine Figueiredo, 37 anos,
+        brasileira nascida em Santos e vivendo desde 2016 em Granada na Espanha.
+        <strong
+          >Estudante de Desenvolvimento Web na
+          <a href="https://www.betrybe.com/" target="_blank">Trybe</a></strong
+        >
+        e graduanda em Sistemas para Internet na
+        <a
+          href="https://descomplica.com.br/faculdade/tecnologia/sistemas-para-internet/"
+          target="_blank"
+          >Faculdade Descomplica</a
+        >.
+      </p>
+    </div>
 
-  <h1 id="topo">Olá, Seja Bem-Vindo!</h1>
+    <div class="habilidades" id="habilidades">
+      <h2>Habilidades Comportamentais</h2>
 
-  <a href="/img/foto-francine.png" target="_blank">
-    <img class="foto-perfil" src="/img/foto-francine.png" alt="Foto de Francine Figueiredo">
-</a>
+      <ul>
+        <li><strong>Comprometimento</strong></li>
+        <li>Autoliderança</li>
+        <li>Gestão do Tempo</li>
+      </ul>
 
-  <p class="sobre" id="sobre"><strong>Sobre mim:</strong> <br>Francine Figueiredo, 36 anos, mãe de <a href="/img/Nutella.jpeg" target="_blank">cachorro</a>, brasileira nascida em Santos e vivendo há mais de 6 anos em Granada na Espanha. <strong>Estudante de Desenvolvimento Web na <a href="https://www.betrybe.com/" target="_blank">Trybe</a></strong> e graduanda em Sistemas para Internet na <a href="https://descomplica.com.br/faculdade/tecnologia/sistemas-para-internet/" target="_blank">Faculdade Descomplica</a>.</p>
+      <h2>Habilidades Técnicas</h2>
 
-  <div class="habilidades" id="habilidades">
-    <h2>Habilidades Comportamentais</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (intermediário)</li>
+        <li>Git</li>
+        <li>Photoshop</li>
+        <li>Espanhol</li>
+        <li>Inglês técnico</li>
+      </ul>
+    </div>
 
-    <ul>
-      <li><strong>Comprometimento</strong></li>
-      <li>Autoliderança</li>
-      <li>Gestão do Tempo</li>
-    </ul>
+    <div class="projetos">
+      <div class="container-projetos"></div>
+    </div>
 
-    <h2>Habilidades Técnicas</h2>
+    <form id="contato" action="https://formspree.io/f/xzblrwal" method="POST">
+      <h2>Entre em Contato</h2>
+      <label> <input type="text" name="nome" placeholder="Nome:" /> </label
+      ><br />
+      <label> <input type="email" name="email" placeholder="E-mail:" /> </label
+      ><br />
+      <label>
+        <textarea
+          name="message"
+          maxlength="500"
+          cols="10"
+          rows="5"
+          placeholder="Mensagem:"
+        ></textarea></label
+      ><br />
+      <button type="submit">ENVIAR</button>
+    </form>
 
-    <ul>
-      <li>HTML5 </li>
-      <li>CSS (intermediário)</li>
-      <li>JavaScript (estudando)</li>
-      <li>Git</li>
-      <li>Photoshop </li>
-      <li>Espanhol</li>
-      <li>Inglês (estudando Aba English + Duolingo)</li>
-    </ul>
-  </div>
+    <footer>
+      <p>2023 | Feito com HTML, CSS, JavasScript e ♡</p>
+    </footer>
 
-    <h3 id="contato">Me encontre nas redes: 
-      <a href="https://www.linkedin.com/in/francinefigueiredo" target="_blank">Linkedin</a> - 
-      <a href="https://github.com/frantEnd" target="_blank"> GitHub</a> - 
-      <a href="https://www.instagram.com/franfigueiredoo/" target="_blank"> Instagram</a></h3>
-
-      <footer>
-        <p>Layout inspirado pelo <a href="https://www.canva.com">Canva</a> utilizando HTML, CSS e ♡. </p>
-      </footer>
-</body>
+    <!-- Formulário de contato usando formspree -->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+      /* paste this line in verbatim */
+      window.formbutton =
+        window.formbutton ||
+        function () {
+          (formbutton.q = formbutton.q || []).push(arguments);
+        };
+      /* customize formbutton below*/
+      formbutton("create", {
+        action: "https://formspree.io/f/xzblrwal",
+        // title: "Como podemos ajudar?",
+        fields: [
+          {
+            type: "email",
+            label: "Email:",
+            name: "email",
+            required: true,
+            placeholder: "your@email.com",
+          },
+          {
+            type: "textarea",
+            label: "Message:",
+            name: "message",
+            // placeholder: "O que você tem em mente?",
+          },
+          { type: "submit" },
+        ],
+        styles: {
+          title: {
+            backgroundColor: "gray",
+          },
+          button: {
+            backgroundColor: "gray",
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
